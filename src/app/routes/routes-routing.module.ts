@@ -10,7 +10,7 @@ const routes: Routes = [
     component: LayoutDefaultComponent,
     children: [
       {
-        path: 'index',
+        path: '',
         component: IndexComponent,
         data: { title: '主页' },
       }
