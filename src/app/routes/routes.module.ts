@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {IndexComponent} from './index/index.component';
+import {SharedModule} from '../shared/shared.module';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -9,7 +12,10 @@ import {IndexComponent} from './index/index.component';
     IndexComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    MatPaginatorModule,
+    MatGridListModule
   ]
 })
 export class RoutesModule { }
