@@ -3,18 +3,26 @@ import { CommonModule } from '@angular/common';
 import { ArticleCardComponent } from './article-card/article-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import { MyCardComponent } from './my-card/my-card.component';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
 @NgModule({
-  declarations: [ArticleCardComponent],
+  declarations: [ArticleCardComponent, MyCardComponent],
   exports: [
-    ArticleCardComponent
+    ArticleCardComponent,
+    MyCardComponent
   ],
   imports: [
     CommonModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule
   ]
 })
 export class SharedModule { }
