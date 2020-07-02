@@ -4,6 +4,8 @@ import {LayoutDefaultComponent} from './default/default.component';
 import {RoutesRoutingModule} from '../routes/routes-routing.module';
 import { HeaderComponent } from './default/header/header.component';
 import { FooterComponent } from './default/footer/footer.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -15,7 +17,9 @@ import { FooterComponent } from './default/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    RoutesRoutingModule
+    RoutesRoutingModule,
+    MatToolbarModule,
+    MatButtonModule
   ]
 })
 export class LayoutModule { }
