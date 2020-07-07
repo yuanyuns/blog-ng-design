@@ -7,6 +7,7 @@ import { MyCardComponent } from './my-card/my-card.component';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -22,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatChipsModule,
     MatListModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }

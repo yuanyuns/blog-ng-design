@@ -8,13 +8,20 @@ import { ArticleComponent } from './article/article.component';
 import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
+import { TagsComponent } from './tags/tags.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { AboutComponent } from './about/about.component';
+import { ArticleBodyComponent } from './index/article-body/article-body.component';
 
 
 
 @NgModule({
   declarations: [
     IndexComponent,
-    ArticleComponent
+    ArticleComponent,
+    TagsComponent,
+    AboutComponent,
+    ArticleBodyComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatGridListModule,
     MatListModule,
     MatStepperModule,
-    MatButtonModule
+    MatButtonModule,
+    MatChipsModule
   ]
 })
 export class RoutesModule { }
