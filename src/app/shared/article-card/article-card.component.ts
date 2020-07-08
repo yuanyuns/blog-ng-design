@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-article-card',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleCardComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  article: Article;
+
+  colors: Array<string> = ['primary', 'accent', 'warn'];
+
+  i = 0;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+
   }
 
 }

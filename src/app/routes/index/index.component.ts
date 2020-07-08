@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PostsService} from '../../core/article/posts.service';
 
 @Component({
   selector: 'app-index',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  articleList: Article[];
+
+  constructor(private service: PostsService) {
+  }
+
 
   ngOnInit(): void {
+    this.service.getArticleList().subscribe((res: any) => {
+      this.articleList = res.data.content;
+    });
   }
 
 }
