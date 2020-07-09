@@ -4,4 +4,5 @@ interface Article {
   createTime: string;
   summary: string;
   tags: string[];
+  content: string;
 }

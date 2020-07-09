@@ -12,6 +12,7 @@ import { TagsComponent } from './tags/tags.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { AboutComponent } from './about/about.component';
 import { ArticleBodyComponent } from './index/article-body/article-body.component';
+import {MarkdownModule} from 'ngx-markdown';
 
 
 
@@ -31,7 +32,8 @@ import { ArticleBodyComponent } from './index/article-body/article-body.componen
     MatListModule,
     MatStepperModule,
     MatButtonModule,
-    MatChipsModule
+    MatChipsModule,
+    MarkdownModule.forRoot()
   ]
 })
 export class RoutesModule { }

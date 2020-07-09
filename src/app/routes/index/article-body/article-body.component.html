@@ -3,14 +3,15 @@
     <div class="mat-card" style="margin: 26px 0;">
       <div style="padding: 30px">
         <div style="text-align: center">
-          <h1>{{article.title}}</h1>
+          <h1>
+            {{article.title}}
+          </h1>
           <span>创建于{{article.createTime}}</span>
         </div>
-        <div style="font-size: 15px;margin: 30px">
-          <p>
-            这些是文章内容，这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容
-            这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容这些是文章内容
-          </p>
+        <div style="font-size: 15px;margin: 30px" class="bg-content">
+          <div markdown ngPreserveWhitespaces >
+            {{article.content}}
+          </div>
         </div>
       </div>
     </div>

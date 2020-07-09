@@ -15,27 +15,22 @@ const routes: Routes = [
       {
         path: '',
         component: IndexComponent,
-        data: { title: '主页' },
       },
       {
         path: 'article',
         component: ArticleComponent,
-        data: { title: '归档' },
       },
       {
         path: 'tags',
         component: TagsComponent,
-        data: { title: '归档' },
       },
       {
         path: 'about',
         component: AboutComponent,
-        data: { title: '归档' },
       },
       {
         path: 'blog/:id',
         component: ArticleBodyComponent,
-        data: { title: '归档' },
       }
     ]
   }
