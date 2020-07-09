@@ -1,6 +1,6 @@
 <mat-card style="margin: 26px 0">
   <mat-card-title style="margin-bottom: 20px">
-    <a routerLink="/blog/1">{{article.title}}</a>
+    <a [routerLink]="['blog',article.id]">{{article.title}}</a>
   </mat-card-title>
   <mat-card-subtitle>创建于{{article.createTime}}</mat-card-subtitle>
   <mat-card-content>
@@ -10,7 +10,7 @@
   </mat-card-content>
   <mat-card-actions>
     <mat-chip-list>
-      <mat-chip *ngFor="let tag of article.tags" color="{{colors[i]}}}" selected>{{tag}}</mat-chip>
+      <mat-chip *ngFor="let tag of article.tags" selected>{{tag}}</mat-chip>
     </mat-chip-list>
   </mat-card-actions>
 </mat-card>

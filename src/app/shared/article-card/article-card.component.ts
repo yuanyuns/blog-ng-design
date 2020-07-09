@@ -10,10 +10,6 @@ export class ArticleCardComponent implements OnInit {
   @Input()
   article: Article;
 
-  colors: Array<string> = ['primary', 'accent', 'warn'];
-
-  i = 0;
-
   constructor() {
   }
 
